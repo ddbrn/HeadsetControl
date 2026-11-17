@@ -36,6 +36,7 @@ void runAllCorsairVirtuosoTests();
 void runAllRazerBlackSharkV2ProPSTests();
 void runAllMchoseTests();
 void runAllFifineTests();
+void runAllLogitechG325Tests();
 }
 
 int main()
@@ -89,6 +90,7 @@ int main()
         headsetcontrol::testing::runAllRazerBlackSharkV2ProPSTests();
         headsetcontrol::testing::runAllMchoseTests();
         headsetcontrol::testing::runAllFifineTests();
+        headsetcontrol::testing::runAllLogitechG325Tests();
 
         std::cout << "\n====================================================================" << std::endl;
         std::cout << "                    All tests passed successfully!                  " << std::endl;
