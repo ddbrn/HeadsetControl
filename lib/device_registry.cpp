@@ -10,6 +10,7 @@
 #include "devices/logitech_astro_a50_gen4.hpp"
 
 // Logitech devices with HIDPPDevice protocol template
+#include "devices/logitech_g325_lightspeed.hpp"
 #include "devices/logitech_g432.hpp"
 #include "devices/logitech_g522_lightspeed.hpp"
 #include "devices/logitech_g533.hpp"
@@ -130,6 +131,7 @@ void DeviceRegistry::initialize()
         registerDevice(std::make_unique<LogitechAstroA50>());
 
         // Logitech devices (using HIDPPDevice protocol template)
+        registerDevice(std::make_unique<LogitechG325Lightspeed>());
         registerDevice(std::make_unique<LogitechG522Lightspeed>());
         registerDevice(std::make_unique<LogitechG533>());
         registerDevice(std::make_unique<LogitechG535>());
